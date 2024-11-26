@@ -1,0 +1,42 @@
+class Solution {
+    public void pattern20(int n) {
+        for(int i=n;i>0;i--){
+             for(int j=0;j<=n-i;j++){
+                System.out.print("*");
+
+            }
+            for(int j=0;j<2*i-2;j++){
+                System.out.print(" ");
+                
+            }
+             for(int j=0;j<=n-i;j++){
+                System.out.print("*");
+
+            }
+            System.out.println();
+
+        }
+        for(int i=0;i<n-1;i++){  
+            for(int j=0;j<n-i-1;j++){
+                System.out.print("*");
+
+            }
+            for(int j=0;j<=2*i+1;j++){
+                System.out.print(" ");
+                
+            }
+             for(int j=0;j<n-i-1;j++){
+                System.out.print("*");
+
+            }
+            System.out.println();
+        }
+
+    }
+}  
+
+// Line 8: Suggest adding a comment to explain the nested loops' purpose 
+// Line 11: Suggest adding a comment to clarify the second set of nested loops
+// Line 3-5: The variable names are fine, no changes necessary.
+// Line 7, 10, 13, and 18: The formatting is consistent overall, minor adjustments in spacing may improve readability.
+// Consider breaking some nested loops into private functions for better modularization and readability, but the structure currently is acceptable.
